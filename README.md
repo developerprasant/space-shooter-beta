@@ -51,7 +51,7 @@ HTML, CSS. JavaScript
 HTML, CSS, JavaScript, Python, Nodejs, firebase, mongodb, jQuery...
 
 
-[Next](https://www.github.com)
+[Next..](https://www.github.com)
 -
 X, Y, Z....
 ## 🔗 Links
