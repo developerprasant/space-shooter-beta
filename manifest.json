@@ -1,0 +1,30 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Space Shooter",
+  "short_name": "Space shooter",
+  "display": "standalone",
+  "start_url": "./index.html",
+  "background_color": "#0c2445",
+  "theme_color": "#ffffff",
+  "description": "A space shooter game",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src":"./res/icons/ico1.png",
+      "type":"image/png",
+      "sizes":"192x192"
+    }
+  ],
+  "screenshots": [],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "categories": [
+    "utility"
+  ]
+}
