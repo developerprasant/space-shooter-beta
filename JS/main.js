@@ -2,11 +2,16 @@
 const {
   PI
 } = Math;
+
+
 const canvas = id('canvas');
 const overCvs = id('overCvs');
+
+
 if (!canvas.getContext || !overCvs.getContext) {
   alert("your browser do not support canvas !")
 }
+
 canvas.height = overCvs.height = window.innerHeight;
 canvas.width = overCvs.width = window.innerWidth;
 
