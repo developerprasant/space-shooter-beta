@@ -55,39 +55,70 @@ window.addEventListener('resize', () => {
   }
 
 })
+let DownEvent, upEvent, moveEvent;
+if ('ontouchstart' in window) {
+  DownEvent = 'touchstart';
+  upEvent = 'touchend';
+  moveEvent = 'touchmove';
+} else {
+  DownEvent = 'mousedown';
+  upEvent = 'mouseup';
+  moveEvent = 'mousemove';
+}
 
-canvas.addEventListener('mousedown', e => {
+
+canvas.addEventListener(DownEvent, e => {
   isDragging = true;
-  if (e.clientY < cvsCentY || e.clientY > mainCentY) {
+  if ('ontouchstart' in window) {
+    var x = e.touches[0].clientX;
+    var y = e.touches[0].clientY;
+} else {
+    var x = e.clientX;
+    var y = e.clientY;
+}
+  if (y < cvsCentY || y > mainCentY) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     centerSetup();
     return;
   }
   
   ctx.moveTo(mainCentX, mainCentY)
-  ctx.lineTo(e.clientX, e.clientY)
+  ctx.lineTo(x, y)
   ctx.stroke()
 })
 
-canvas.addEventListener('mousemove', e => {
+canvas.addEventListener(moveEvent, e => {
   if (!isDragging) return;
-
+  if ('ontouchstart' in window) {
+    var x = e.touches[0].clientX;
+    var y = e.touches[0].clientY;
+} else {
+    var x = e.clientX;
+    var y = e.clientY;
+}
   ctx.clearRect(0, cvsCentY, canvas.width, cvsCentY)
   centerSetup()
 
-  if (e.clientY < cvsCentY || e.clientY > mainCentY) return;
+  if (y < cvsCentY || y > mainCentY) return;
   
   ctx.moveTo(mainCentX, mainCentY)
-  ctx.lineTo(e.clientX, e.clientY)
+  ctx.lineTo(x, y)
   ctx.stroke()
 
   ctx.beginPath()
-  ctx.moveTo(e.clientX, e.clientY)
+  ctx.moveTo(x, y)
 })
 
-canvas.addEventListener('mouseup', e => {
+canvas.addEventListener(upEvent, e => {
   isDragging = false;
-  if (e.clientY < cvsCentY || e.clientY > mainCentY) {
+  if ('ontouchstart' in window) {
+    var x = e.touches[0].clientX;
+    var y = e.touches[0].clientY;
+} else {
+    var x = e.clientX;
+    var y = e.clientY;
+}
+  if (y < cvsCentY || y > mainCentY) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     centerSetup();
     return;
@@ -96,7 +127,7 @@ canvas.addEventListener('mouseup', e => {
 
   ctx.beginPath()
   ctx.moveTo(mainCentX, mainCentY)
-  ctx.lineTo(e.clientX, e.clientY)
+  ctx.lineTo(x, y)
   ctx.stroke()
   ctx.clearRect(0, cvsCentY, canvas.width, cvsCentY)
   centerSetup()
