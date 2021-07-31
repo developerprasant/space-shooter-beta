@@ -22,7 +22,7 @@ window.onload = function(){
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
-      .register('./sw.js')
+      .register('./Arnav-sw.js')
       .then(reg=>console.log(reg))
       .catch(e=>console.log(e.message));
   })
