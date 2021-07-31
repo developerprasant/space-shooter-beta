@@ -1,11 +1,11 @@
 const cacheName = 'v1';
-
 const cacheAssats = [
   './index.html',
   './CSS/style.css',
   './JS/main.js'
 ]
 
+self.skipWaiting();
 self.addEventListener('install',e=>{
   e.waitUntil(
     caches

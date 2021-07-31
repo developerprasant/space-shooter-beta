@@ -1,4 +1,5 @@
 self.skipWaiting();
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('v3').then(function(cache) {
