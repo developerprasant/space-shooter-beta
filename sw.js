@@ -19,7 +19,7 @@ self.addEventListener('activate',e=>{
 self.addEventListener('fetch',e=>{
   console.log('fetching');
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request.url)
     .then(res=>{
       //Make copy clone of response
       const resClone = res.clone();

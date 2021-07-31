@@ -16,6 +16,11 @@
       "src": "./res/icons/ico1.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "./res/icons/ico1.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "features": [
