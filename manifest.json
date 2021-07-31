@@ -9,22 +9,20 @@
   "theme_color": "#ffffff",
   "description": "A space shooter game",
   "orientation": "portrait",
-  "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
     {
-      "src":"./res/icons/ico1.png",
-      "type":"image/png",
-      "sizes":"192x192"
+      "src": "./res/icons/ico1.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
-  "screenshots": [],
   "features": [
     "Cross Platform",
     "fast",
     "simple"
   ],
   "categories": [
-    "utility"
+    "Game"
   ]
 }
