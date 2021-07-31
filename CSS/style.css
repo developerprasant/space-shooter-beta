@@ -2,13 +2,13 @@
 *{  
   margin: 0;
   padding: 0;
-  outline: 1px solid #ff0000;
+  outline: 0px solid #ff0000;
 } 
 body{
   margin: 0;
-  background:#0c2445;
-  color :#C7E9FF;
-  overflow: hidden;
+  background:#3B78CB;
+  color :#fffffd;
+  font-family: sans-serif;
 }
 
 #canv0{

@@ -1,3 +1,4 @@
+const pLoad = document.getElementsByClassName('page-loading')[0];
 const canv0 = document.getElementById('canv0');
 const Sts = {} //width height pointer etc
 const GS = {} //GS : Game Status
@@ -12,22 +13,21 @@ function sizeRander(i=Sts.xf||1){
   canv0.width = Sts.w;
 }
 
-window.onload = function(){
-  sizeRander()
+document.body.onload = function(){
+  sizeRander();
+  setTimeout(()=>setLoader(false),1000);
 }
 
-
+function setLoader(bool){
+  if(bool)pLoad.removeAttribute('hidden');
+  else pLoad.setAttribute('hidden','');
+}
 
 //Service worker
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
     navigator.serviceWorker
       .register('./sw.js')
-      .then(reg=>console.log(reg))
       .catch(e=>console.log(e.message));
   })
 }
-
-
-//Eruda console
-// (function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();

@@ -6,7 +6,7 @@
   "display": "standalone",
   "start_url": "https://prasantdev.github.io/space-shooter-beta/",
   "scope": "https://prasantdev.github.io/space-shooter-beta/",
-  "background_color": "#0c2445",
+  "background_color": "#3B78CB",
   "theme_color": "#ffffff",
   "description": "A space shooter game",
   "orientation": "portrait",
