@@ -1,7 +1,7 @@
 self.skipWaiting();
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('slcodepreview').then(function(cache) {
+   caches.open('v3').then(function(cache) {
       //files to precache
      return cache.addAll([
       './',
