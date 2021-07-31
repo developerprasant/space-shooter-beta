@@ -1,0 +1,18 @@
+.page-loading{
+  background:;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+}
+.page-loading::part(icon){
+  background:#8A94FF;
+  position: absolute;
+  margin:0 auto;
+  top: 50%;
+  margin-top:;
+  width: 1em;
+  height: 1em;
+  border:1px solid #868686;
+}

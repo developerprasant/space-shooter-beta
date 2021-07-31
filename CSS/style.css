@@ -1,19 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "./loading-page.css";
+*{  
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #ff0000;
+} 
 body{
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  background:#0c2445;
+  color :#C7E9FF;
+  overflow: hidden;
 }
-.hide{
-    display: none;
-}
-#canvas{
-    background: url('./cvsback.png'), url('./moon.jpg');
-    touch-action: none;
+
+#canv0{
+    background: url('../res/cvsback.png'), url('../res/moon.jpg');
+    /* touch-action: none; */
     background-size: cover;
 }
+
+
+
+/*/
 #overCvs{
     position: absolute;
     top: 0;
@@ -53,4 +59,4 @@ body{
     margin: 0 auto;
     user-select: none;
     font-size: 2rem;
-}
+} */
