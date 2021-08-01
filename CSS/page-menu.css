@@ -37,3 +37,9 @@
 #pm-wrapper div:active{
   outline: 1px solid #00ffff;
 }
+
+@media screen and (min-width:500px){
+  #page-menu{
+    background:#3B78CB url("../res/backgrounds/home/pc.webp") center/cover;
+  }
+}
