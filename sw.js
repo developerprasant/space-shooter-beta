@@ -1,4 +1,4 @@
-const cacheName = 'v1';
+const cacheName = 'v2';
 // self.addEventListener('install',e=>{})
 self.addEventListener('activate',e=>{
   //Remove unwanted caches
