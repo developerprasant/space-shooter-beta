@@ -24,30 +24,29 @@
 </head>
 <body>
   <div>
-    
-  </div>
-  <div class="page-loading">
+  
+  </div> <!--Loading Page-->
+  <div class="page-loading fullscreen">
     <div class="pl-icon"></div>
     <div class="pl-text">Loading...</div>
   </div>
+  
+  <div id="page-menu" class="fullscreen">
+    <div id="pm-wrapper">
+      <div id="pm-play">Play</div>
+      <div id="pm-settings">Settings</div>
+      <div id="pm-about">About</div>
+    </div>
+  </div>
+    
   <canvas id="canv0" hidden></canvas>
     <!-- <canvas id="overCvs"></canvas> -->
 
     <!-- <div id="menu-icon"> MENU </div> -->
-    <!-- <div id="menu-list-container">
-        <ul id="menu-list">
-            <li class="menu-list-item">First item</li>
-            <li class="menu-list-item">Second item</li>
-            <li class="menu-list-item">Third item</li>
-            <li class="menu-list-item">Fourth item</li>
-            <li class="menu-list-item">Fifth item</li>
-        </ul>
-    </div> -->
 
     <!-- <audio id='click-sound' class='hide' controls>
         <source src="dop.mp3" type="">
     </audio> -->
-    
     <script src="./JS/main.js" type="module"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
 </body>
