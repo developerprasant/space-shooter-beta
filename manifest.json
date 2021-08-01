@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Space Shooter",
   "short_name": "Space shooter",
-  "display": "fullscreen",
+  "display":"fullscreen",
   "start_url": "https://prasantdev.github.io/space-shooter-beta/",
   "scope": "https://prasantdev.github.io/space-shooter-beta/",
   "background_color": "#3B78CB",
