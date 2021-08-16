@@ -1,5 +1,6 @@
 #page-loading{
   background:#3B78CB88;
+  backdrop-filter: blur(2px);
   touch-action:none;
   z-index:9;
 }

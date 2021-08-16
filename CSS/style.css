@@ -17,6 +17,7 @@ body{
 #canv0{
     background: url('../res/backgrounds/bg6.jpg') center/cover ;
     z-index:7;
+    cursor: none;
 }
 
 .fullscreen{
