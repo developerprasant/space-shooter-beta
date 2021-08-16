@@ -37,8 +37,8 @@ export default class {
   }
   
   move(ev){
-    let x = (ev.clientX||ev.touches[0].clientX) *devicePixelRatio;
-    let y = (ev.clientY||ev.touches[0].clientY) *devicePixelRatio;
+    let x = (ev.clientX||ev.touches[0]?.clientX) *devicePixelRatio;
+    let y = (ev.clientY||ev.touches[0]?.clientY) *devicePixelRatio;
     this.P=[x,y];
   }
   
