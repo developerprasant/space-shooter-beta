@@ -1,13 +1,17 @@
-const pLoad = document.getElementsByClassName('page-loading')[0];
+"use strict";
+import Game from './game.js';
+
+const P = { //Page-layers
+  load : document.getElementById('page-loading'),
+  menu : document.getElementById('page-menu'),
+}
 const canv0 = document.getElementById('canv0');
 const Sts = {} //width height pointer etc
-const GS = {} //GS : Game Status
 
 window.onresize=()=>sizeRander();
-function sizeRander(i=Sts.xf||1){
-  Sts.xf=i; //resolution
-  Sts.w= innerWidth*i; //width×resolution
-  Sts.h= innerHeight*i; //height×rsolution
+function sizeRander(x=devicePixelRatio){
+  Sts.w= innerWidth*x; //width×resolution
+  Sts.h= innerHeight*x; //height×rsolution
   
   canv0.height = Sts.h;
   canv0.width = Sts.w;
@@ -15,19 +19,38 @@ function sizeRander(i=Sts.xf||1){
 
 document.body.onload = function(){
   sizeRander();
-  setTimeout(()=>setLoader(false),1000);
+  show(P.menu);
+  hide(P.load);
 }
 
-function setLoader(bool){
-  if(bool)pLoad.removeAttribute('hidden');
-  else pLoad.setAttribute('hidden','');
+function show(el){el.removeAttribute('hidden');}
+function hide(el){el.setAttribute('hidden',true);}
+function load(time=0){
+  [()=>show(P.load),()=>hide(P.load)][!time+0]()
+  if(typeof time =='number'&&time>0)
+    setTimeout(()=>hide(P.load),time);
 }
 
-//Service worker
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>{
-    navigator.serviceWorker
+{//Menu
+  const M = {
+    play : document.getElementById('pm-play'),
+  }
+  
+  function Play(){
+    load(500);
+    show(canv0);
+    hide(P.menu);
+    new Game(canv0,Sts);
+  }
+  M.play.addEventListener('click',Play);
+}
+
+{//Service worker
+  if('serviceWorker' in navigator){
+    window.addEventListener('load',()=>{
+      navigator.serviceWorker
       .register('./sw.js')
       .catch(e=>console.log(e.message));
-  })
+    })
+  }
 }

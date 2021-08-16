@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" >
   <meta name="theme-color" content="#3B78CB">
   <meta name="description" content="Space shooter game">
   <meta name="keywords" content="space, shooter ,game">
@@ -23,23 +23,23 @@
   
 </head>
 <body>
-  <div>
   
-  </div> <!--Loading Page-->
-  <div class="page-loading fullscreen">
+  <!--Loading Page-->
+  <div id="page-loading" class="fullscreen">
     <div class="pl-icon"></div>
     <div class="pl-text">Loading...</div>
   </div>
   
-  <div id="page-menu" class="fullscreen">
+  <!--Menu Page-->
+  <div hidden id="page-menu" class="fullscreen">
     <div id="pm-wrapper">
-      <div id="pm-play">Play</div>
+      <div id="pm-play" >Play</div>
       <div id="pm-settings">Settings</div>
       <div id="pm-about">About</div>
     </div>
   </div>
     
-  <canvas id="canv0" hidden></canvas>
+  <canvas id="canv0" class="fullscreen" hidden></canvas>
     <!-- <canvas id="overCvs"></canvas> -->
 
     <!-- <div id="menu-icon"> MENU </div> -->

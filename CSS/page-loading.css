@@ -1,5 +1,5 @@
-.page-loading{
-  background:#3B78CB;
+#page-loading{
+  background:#3B78CB88;
   touch-action:none;
   z-index:9;
 }

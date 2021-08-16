@@ -1,6 +1,7 @@
 @import "./page-loading.css";
 @import "./page-menu.css";
-/*{  
+@import 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap';
+/*{
   margin: 0;
   padding: 0;
   outline: 0px solid #ff0000;
@@ -10,13 +11,12 @@ body{
   margin: 0;
   background:#3B78CB;
   color :#fffffd;
-  font-family: sans-serif;
+  font-family: Rajdhani,sans-serif;
 }
 
 #canv0{
-    background: url('../res/cvsback.png'), url('../res/moon.jpg');
-    /* touch-action: none; */
-    background-size: cover;
+    background: url('../res/backgrounds/bg6.jpg') center/cover ;
+    z-index:7;
 }
 
 .fullscreen{
