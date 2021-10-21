@@ -12,13 +12,13 @@ body{
   background:#3B78CB;
   color :#fffffd;
   font-family: Rajdhani,sans-serif;
+  touch-action: none !important;
 }
 
 #canv0{
     background: url('../res/backgrounds/bg6.jpg') center/cover ;
     z-index:7;
     cursor: none;
-    touch-action: none;
 }
 
 .fullscreen{
