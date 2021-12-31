@@ -9,10 +9,10 @@ A brief description of what this project does and who it's for
     
 ## Authors
 
-- [@prasantdev](https://www.github.com/prasantdev)
+- [@developerprasant](https://www.github.com/developerprasant)
 - [@...](#)
 
-## [Play here](https://prasantdev.github.io/space-shooter)
+## [Play here](https://developerprasant.github.io/space-shooter)
 
   
 ## Contributing
@@ -34,7 +34,7 @@ HTML, CSS. JavaScript
 
   
 ## 🚀 About Us
-[Prasant](https://www.github.com/prasantdev)
+[Prasant](https://www.github.com/developerprasant)
 -
 - I'm a full stack developer...
 - I love songs
@@ -46,7 +46,7 @@ HTML, CSS. JavaScript
 
   
 ## 🛠 Skills
-[Prasant](https://www.github.com/prasantdev)
+[Prasant](https://www.github.com/developerprasant)
 - 
 HTML, CSS, JavaScript, Python, Nodejs, firebase, mongodb, jQuery...
 
